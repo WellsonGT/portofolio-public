@@ -579,7 +579,7 @@ section {
   .navbar { padding: 16px 40px; display: none;}
   .container { width: 90%; }
 
-  .home { padding: 80px 6%; flex-direction: column; text-align: center; gap: 20px; }
+  .home { padding: 80px 6%; flex-direction: column-reverse; text-align: center; gap: 20px; }
   .home-img img { width: 280px; margin: 0 auto; }
   .home-content h1 { font-size: 40px; }
   .home-content h2 { font-size: 20px; }
@@ -689,7 +689,7 @@ section {
   .navbar .logo { font-size: 1.1rem; }
   .nav-links { gap: 8px; font-size: 13px; }
 
-  .home { padding: 40px 4%; }
+  .home { padding: 40px 4%; flex-direction: column-reverse; }
   .home-content h1 { font-size: 22px; }
   .home-content h2 { font-size: 14px; }
   .home-img img { width: 150px; }
