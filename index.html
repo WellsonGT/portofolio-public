@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Wellson</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+      <h2 class="logo">Wellson</h2>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#about">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#home">Projects</a></li>
+          <li><a href="#">My Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <p class="hello">HELLO!</p>
+      <h1>I'm <span>Wellson Gideon Tandy</span></h1>
+      <h2>Fullstack Web Developer</h2>
+      <h2>Noescent CEO</h2>
+      <div class="buttons">
+        <a href="https://wa.me/6285899649212?text=Halo%20Wellson!%20Saya%20tertarik%20untuk%20bekerja%20sama%20dengan%20Anda." 
+            target="_blank" 
+            class="btn primary">
+            Hire Me
+        </a>
+
+        <a href="#" class="btn secondary" id="myWorksBtn">My Works</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="pasfoto.jpg" alt="Wellson Gideon Tandy">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-img">
+        <img src="pasfoto.jpg" alt="Wellson Gideon Tandy">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>A Genius in disguise</p>
+
+        <ul class="about-info">
+          <li><strong>Name:</strong> Wellson Gideon Tandy</li>
+          <li><strong>Date of birth:</strong> August 31, 2004</li>
+          <li><strong>Address:</strong> B Residence BSD</li>
+          <li><strong>Zip code:</strong> 15339</li>
+          <li><strong>Email:</strong> wellsongideont@gmail.com</li>
+          <li><strong>Phone:</strong> +62 85899649212</li>
+        </ul>
+
+        <p class="projects">1 Projects Complete</p>
+        <a href="CV.pdf" download class="btn-download">Download CV</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <canvas id="skillsRadarChart"></canvas>
+
+      <div class="skill-bars">
+        <div class="bar">
+          <div class="info"><span>PHP</span><span>90%</span></div>
+          <div class="line php"></div>
+        </div>
+        <div class="bar">
+          <div class="info"><span>HTML5</span><span>95%</span></div>
+          <div class="line html"></div>
+        </div>
+        <div class="bar">
+          <div class="info"><span>Javascript</span><span>85%</span></div>
+          <div class="line js"></div>
+        </div>
+        <div class="bar">
+          <div class="info"><span>Python</span><span>90%</span></div>
+          <div class="line python"></div>
+        </div>
+        <div class="bar">
+          <div class="info"><span>CSS3</span><span>90%</span></div>
+          <div class="line css"></div>
+        </div>
+        <div class="bar">
+          <div class="info"><span>MySQL</span><span>90%</span></div>
+          <div class="line mysql"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SERVICES SECTION ======== -->
+<section id="services" class="services-section">
+  <h2>My Services</h2>
+  <p class="section-subtitle">Layanan profesional yang saya tawarkan</p>
+
+  <div class="services-container">
+    <!-- Service 1 -->
+    <div class="service-card">
+      <h3>Website Statis</h3>
+      <p class="price">Rp 3.000.000 – Rp 10.000.000 / tahun</p>
+      <p class="desc">
+        Website statis cocok untuk portofolio, landing page, atau company profile sederhana
+        dengan tampilan profesional dan kecepatan tinggi.
+      </p>
+      <p class="renewal">
+        <strong>Perpanjangan paket:</strong> 50% dari harga yang telah disetujui.
+      </p>
+      <a href="https://wa.me/6285899649212?text=Halo%2C+saya+ingin+memesan+layanan+Website+Statis" 
+         class="btn-service">Pesan Sekarang</a>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <h3>Website Dinamis</h3>
+      <p class="price">Rp 10.000.000 – Rp 50.000.000 / tahun</p>
+      <p class="desc">
+        Website dinamis ideal untuk bisnis, toko online, dan sistem berbasis database
+        dengan fitur login, dashboard, dan integrasi backend yang fleksibel.
+      </p>
+      <p class="renewal">
+        <strong>Perpanjangan paket:</strong> 50% dari harga yang telah disetujui.
+      </p>
+      <a href="https://wa.me/6285899649212?text=Halo%2C+saya+ingin+memesan+layanan+Website+Dinamis" 
+         class="btn-service">Pesan Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== CONTACT SECTION ======== -->
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p class="section-subtitle">Hubungi saya melalui platform favorit Anda</p>
+
+  <div class="contact-container">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/wellsongtandy" target="_blank" class="contact-card instagram">
+      <i class="fab fa-instagram"></i>
+      <h3>Instagram</h3>
+      <p>@wellsongtandy</p>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6285899649212?text=Halo%2C+saya+tertarik+dengan+layanan+Anda" target="_blank" class="contact-card whatsapp">
+      <i class="fab fa-whatsapp"></i>
+      <h3>WhatsApp</h3>
+      <p>+62 858-9964-9212</p>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:wellsongideont@gmail.com" class="contact-card email">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p>wellsongideont@gmail.com</p>
+    </a>
+
+    <!-- Line -->
+    <a href="https://line.me/ti/p/wellsongt" target="_blank" class="contact-card line-app">
+      <i class="fab fa-line"></i>
+      <h3>Line</h3>
+      <p>@wellsongt</p>
+    </a>
+  </div>
+</section>
+
+
+  <!-- POPUP PROJECT LIST -->
+  <div id="projectPopup" class="popup">
+    <div class="popup-content">
+      <h3>Completed Projects</h3>
+      <ul class="project-list">
+        <li><a href="https://wellsongt.github.io/CodingCamp-150925-wellson/" target="_blank">To Do List Web</a></li>
+      </ul>
+      <button id="closePopup" class="btn primary close-btn">Close</button>
+    </div>
+  </div>
+
+<!-- ======== FOOTER ======== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Copyright -->
+    <div class="footer-column">
+      <h3>Wellson Gideon Tandy</h3>
+      <p>&copy; 2025 Designed & Developed by Wellson Gideon Tandy</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/wellsongtandy" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://wa.me/6285899649212" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        <li><a href="mailto:wellsongideont@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+        <li><a href="https://line.me/ti/p/wellsongt"><i class="fab fa-line"></i> Line</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-column">
+      <h3>Services</h3>
+      <ul>
+        <li>Website Statis</li>
+        <li>Website Dinamis</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.style.padding = '10px 60px';
+      navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+      navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
+    } else {
+      navbar.style.padding = '20px 60px';
+      navbar.style.background = 'rgba(0, 0, 0, 0.85)';
+      navbar.style.boxShadow = 'none';
+    }
+  });
+</script>
+
+</html>
