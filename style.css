@@ -510,13 +510,6 @@ section {
 .email i { color: #FFB84D; }
 .line-app i { color: #00C300; }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 /* ======== FOOTER ======== */
 .footer {
@@ -579,12 +572,164 @@ section {
   color: #ffb84d;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .footer-container {
+/* ======== RESPONSIVE STYLES (TABLET & MOBILE) ======== */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+  .navbar { padding: 16px 40px; display: none;}
+  .container { width: 90%; }
+
+  .home { padding: 80px 6%; flex-direction: column; text-align: center; gap: 20px; }
+  .home-img img { width: 280px; margin: 0 auto; }
+  .home-content h1 { font-size: 40px; }
+  .home-content h2 { font-size: 20px; }
+
+  .about { padding: 60px 6%; }
+  .about .container { flex-direction: column; text-align: center; gap: 20px; }
+  .about-img img { width: 240px; }
+
+  .skills { padding: 60px 6%; }
+  #skillsRadarChart { max-width: 90%; margin: 20px auto; }
+
+  .services-container { gap: 30px; }
+  .service-card { width: 48%; }
+
+  .contact-container { gap: 20px; }
+  .contact-card { width: 48%; }
+
+  .popup { right: 5%; width: 320px; top: 100px; }
+  .buttons { flex-direction: column; gap: 10px; }
+  .about-img { display: none; }
+
+  .about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 30px;
+    background: #181818;
+    border-radius: 10px;
+    padding: 18px 10px;
+    margin: 20px 0;
+  }
+  .about-info li {
+    margin-bottom: 0;
+    color: #fff;
+    border-bottom: none;
+    padding: 0;
+    font-size: 1rem;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    background: none;
+  }
+  .about-info strong {
+    color: #ffb84d;
+    font-weight: 600;
+    margin-bottom: 2px;
+    width: auto;
+    display: block;
+    font-size: 0.98rem;
+  }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+  .navbar { padding: 12px 20px; display: none;}
+  .nav-links { gap: 12px; font-size: 14px; flex-wrap: wrap; justify-content: center; }
+
+  section { scroll-margin-top: 80px; padding-top: 80px; }
+
+  .home { padding: 60px 5%; flex-direction: column-reverse; }
+  .home-img img { width: 220px; }
+  .home-content h1 { font-size: 28px; }
+  .home-content h2 { font-size: 16px; }
+
+  .about { padding: 40px 5%; }
+  .about-img img { width: 180px; }
+
+  .skill-bars { max-width: 100%; padding: 0 10px; }
+  #skillsRadarChart { max-width: 100%; }
+
+  .services-container { flex-direction: column; align-items: center; }
+  .service-card { width: 100%; padding: 30px; }
+
+  .contact-container { flex-direction: column; align-items: center; }
+  .contact-card { width: 100%; }
+
+  .footer-container { flex-direction: column; gap: 20px; text-align: center; }
+
+  .popup { right: 5%; width: 90%; top: 140px; max-height: 60vh; }
+  .buttons { flex-direction: column; gap: 10px; }
+  .about-img { display: none; }
+
+  .about-info {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 14px 6px;
+  }
+  .about-info li {
+    font-size: 0.98rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+    background: none;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .about-info strong {
+    color: #ffb84d;
+    font-size: 0.97rem;
+    margin-bottom: 2px;
+    width: auto;
+    display: block;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .navbar { padding: 10px 12px; display: none;}
+  .navbar .logo { font-size: 1.1rem; }
+  .nav-links { gap: 8px; font-size: 13px; }
+
+  .home { padding: 40px 4%; }
+  .home-content h1 { font-size: 22px; }
+  .home-content h2 { font-size: 14px; }
+  .home-img img { width: 150px; }
+
+  .skills h2 { font-size: 24px; }
+  #skillsRadarChart { padding: 10px; }
+
+  .btn, .btn-service, .btn-download { padding: 8px 14px; font-size: 14px; }
+
+  .popup { top: 120px; max-height: 55vh; }
+
+  /* make nav-links horizontally scrollable if they overflow */
+  .nav-links { display: flex; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .nav-links li { white-space: nowrap; }
+  .buttons { flex-direction: column; gap: 10px; }
+  .about-img { display: none; }
+
+  .about-info {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px 2px;
+    border-radius: 8px;
+  }
+  .about-info li {
+    font-size: 0.95rem;
+    padding: 7px 0;
+    border-bottom: 1px solid #222;
+    background: none;
+    margin-bottom: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-info strong {
+    color: #ffb84d;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+    width: auto;
+    display: block;
   }
 }
 
