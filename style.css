@@ -629,6 +629,24 @@ section {
     display: block;
     font-size: 0.98rem;
   }
+
+  .skills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills h2 {
+    order: 1;
+  }
+  #skillsRadarChart {
+    order: 2;
+  }
+  .skill-bars {
+    order: 3;
+    margin-top: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Tablets and large phones */
@@ -681,6 +699,24 @@ section {
     width: auto;
     display: block;
   }
+
+  .skills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills h2 {
+    order: 1;
+  }
+  #skillsRadarChart {
+    order: 2;
+  }
+  .skill-bars {
+    order: 3;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Small phones */
@@ -730,6 +766,24 @@ section {
     margin-bottom: 2px;
     width: auto;
     display: block;
+  }
+
+  .skills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills h2 {
+    order: 1;
+  }
+  #skillsRadarChart {
+    order: 2;
+  }
+  .skill-bars {
+    order: 3;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
